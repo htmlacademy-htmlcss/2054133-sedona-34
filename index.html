@@ -12,7 +12,7 @@
     <nav class="naviagtion">
       <ul class="naviagtion-list">
         <li class="naviagtion-item">
-          <a class="naviagtion-link" href="index.html">Главная</a>
+          <a class="naviagtion-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="naviagtion-item">
           <a class="naviagtion-link" href="#">О Седоне</a>
@@ -33,13 +33,13 @@
           </a>
         </li>
         <li class="naviagtion-item">
-          <button type="button">Хочу сюда!</button>
+          <button type="nav-button">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main-index">
     <section>
       <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
       <img src="#" alt="Пейзаж на горы" width="458" height="352" />
@@ -119,8 +119,8 @@
       </p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription">Введите ваш e-mail</label>
-        <input class="field" id="subscription" type="email" placeholder="Ваш e-mail" name="newsletter-email" />
-        <button class="button" type="submit">Подписаться</button>
+        <input class="field" id="subscription" type="email" placeholder="Ваш e-mail" name="newsletter-email"/>
+        <button class="button-submti" type="submit">Подписаться</button>
       </form>
     </section>
 
@@ -152,11 +152,12 @@
       <section class="footer-developer">
         <h2 class="visually-hidden">Перейти на сайт разработчика</h2>
         <a class="footer-developer-link" href="#">
-          <img src="#" width="115" height="34" alt="лого разработчика HTML-Academy">
+          <img src="#" width="115" height="34" alt="лого разработчика">
         </a>
       </section>
     </footer>
   </main>
+
 </body>
 
 </html>

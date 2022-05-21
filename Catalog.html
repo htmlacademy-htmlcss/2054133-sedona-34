@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="logo-link" href="index.html"><img src="#" alt="Логотип нашей компании" width="139" height="70" /></a>
+    <nav class="naviagtion">
+      <ul class="naviagtion-list">
+        <li class="naviagtion-item">
+          <a class="naviagtion-link" href="index.html">Главная</a>
+        </li>
+        <li class="naviagtion-item">
+          <a class="naviagtion-link" href="#">О Седоне</a>
+        </li>
+        <li class="naviagtion-item navigation-link-current">
+          <a class="naviagtion-link" href="Catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="naviagtion-list naviagtion-user">
+        <li class="naviagtion-item">
+          <a class="naviagtion-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="naviagtion-item">
+          <a class="naviagtion-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="naviagtion-item">
+          <button type="button">Хочу сюда!</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-inner">
+    <div class="main-catalog-filter">
+      <header class="header-inner">
+        <h1>Гостиницы седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-list">
+            <a class="breadcrumbs-link" href="index.html">
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-link">
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
+        <Form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-group">
+            <legend>Инфраструктура:</legend>
+            <input name="infrastructure" type="checkbox" value="swimmingpull" checked>Бассейн</input>
+            <input name="infrastructure" type="checkbox" value="parking" checked>Парковка</input>
+            <input name="infrastructure" type="checkbox" value="Wi-fi">Wi-fi</input>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend>Тип Жилья:</legend>
+            <input name="typeofhousing" type="radio" value="Hotel" checked>Гостиница</input>
+            <input name="typeofhousing" type="radio" value="Motel">Мотель</input>
+            <input name="typeofhousing" type="radio" value="Apartaments">Апартаменты</input>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend>Стоимость, ₽:</legend>
+            <input type="number" min="0" max="9000" value="0" placeholder="от">
+            <input type="number" min="0" max="9000" value="9000" placeholder="до">
+          </fieldset>
+          <button class="button-submit" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Cбросить</button>
+        </Form>
+      </section>
+    </div>
+
+    <section class="results">
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <p><b>Найдено гостиниц:38</b></p>
+      <select>
+        <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+      <a class="button-view-dark" href="#">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a class="button-view-light" href="#">
+        <span class="visually-hidden">Показать по одной</span>
+      </a>
+      <a class="button-view-light" href="#">
+        <span class="visually-hidden">Показать списком</span>
+      </a>
+    </section>
+  </main>
+
+</body>
