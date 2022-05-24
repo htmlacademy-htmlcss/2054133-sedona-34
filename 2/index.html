@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <base href="https://htmlacademy-htmlcss.github.io/2054133-sedona-34/2/">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="logo-link" href="index.html"><img src="#" alt="Логотип" width="139" height="70" /></a>
+    <a class="logo-link" href="index.html"><img src="images/logo.svg" alt="Логотип" width="139" height="70" /></a>
     <nav class="naviagtion">
+      <!--может лого и первый nav стоит объединить в div для позиционирования относительно второго nav?-->
       <ul class="naviagtion-list">
         <li class="naviagtion-item">
           <a class="naviagtion-link navigation-link-current">Главная</a>
         </li>
         <li class="naviagtion-item">
-          <a class="naviagtion-link" href="#">О Седоне</a>
+          <a class="naviagtion-link" href="#sedona">О Седоне</a>
         </li>
         <li class="naviagtion-item">
           <a class="naviagtion-link" href="Catalog.html">Гостиницы</a>
@@ -44,22 +45,23 @@
   <main class="main-index">
     <section>
       <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
-      <img src="#" alt="Пейзаж на горы" width="458" height="352" />
-      <p> <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b> </p>
+      <!--предположение, что может стоит сделать отдельными картинками, чтобы в случае замены фона/надписи не было проблем?-->
+      <img src="images/welcome-photo.jpg" alt="Пейзаж на горы" width="1200" height="485" />
+      <p id="sedona"> <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b> </p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
     <section class="reason">
       <h2 class="visually-hidden">Список причин</h2>
       <ul class="reason-list">
-        <li class="reason-list-item reason-one">
-          <h3 class="reason-one-header">Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <li class="reason-list-item reason-one-item">
+          <div class="reason-one">
+            <h3 class="reason-one-item-header">Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img src="images/city-photo.jpg" width="800" height="384" alt="фотография города" />
           <ul class="reason-list-item-list">
-            <li>
-              <img src="#" width="800" height="384" alt="фотография города" />
-            </li>
             <li class="reason-list-item-list-item">
               <h4>Жилье</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -74,24 +76,26 @@
             </li>
           </ul>
         </li>
-        <li class="reason-list-item reason-two">
-          <img src="#" width="800" height="384" alt="фотография моста дьявола" />
-          <h3 class="reason-two-header">Там есть мост дьявола</h3>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <li class="reason-list-item reason-two-item">
+          <div class="reason-two">
+            <h3 class="reason-two-item-header">Там есть мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+          <img src="images/bridge-of-devil.jpg" width="800" height="384" alt="фотография моста дьявола" />
         </li>
-        <li class="reason-list-item reason-three">
-          <h3 class="reason-three-header">Небольшая площадь</h3>
+        <li class="reason-list-item reason-three-item">
+          <h3 class="reason-three-item-header">Небольшая площадь</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="reason-list-item reason-four">
-          <h3 class="reason-four-header">Красивая дорога</h3>
+        <li class="reason-list-item reason-four-item">
+          <h3 class="reason-four-item-header">Красивая дорога</h3>
           <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="reason-list-item reason-five">
-          <h3 class="reason-five-header">Мало туристов</h3>
+        <li class="reason-list-item reason-five-item">
+          <h3 class="reason-five-item-header">Мало туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
@@ -116,7 +120,7 @@
   </main>
 
   <footer class="page-footer">
-    <section class="footer-social">
+    <div class="footer-social">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul>
         <li>
@@ -135,17 +139,11 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="footer-telephon">
-      <h2 class="visually-hidden">Наш телефон</h2>
-      <a class="footer-telephon-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
-    <section class="footer-developer">
-      <h2 class="visually-hidden">Перейти на сайт разработчика</h2>
-      <a class="footer-developer-link" href="#">
-        <img src="#" width="115" height="34" alt="лого разработчика">
-      </a>
-    </section>
+    </div>
+    <a class="footer-telephon-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-developer-link" href="https://htmlacademy.ru/">
+      <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="лого разработчика" />
+    </a>
   </footer>
 </body>
 
