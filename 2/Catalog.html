@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="inner-page">
     <a class="logo-link" href="index.html"><img src="images/logo.svg" alt="Логотип" width="139" height="70" /></a>
     <nav class="naviagtion">
       <ul class="naviagtion-list">
@@ -46,12 +46,12 @@
       <header class="header-inner">
         <h1>Гостиницы Cедоны</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span>Главная</span>
             </a>
           </li>
-          <li class="breadcrumbs-link">
+          <li class="breadcrumbs-item">
             <a>Гостиницы</a>
           </li>
         </ul>
@@ -83,7 +83,12 @@
             <label for="from">От</label>
             <input type="number" id="from" min="0" max="9000" value="0" />
             <label for="till">До</label>
-            <input type="number" id="till" min="0" max="9000" value="9000" />
+            <input type="number" id="till" min="0" max="9000" value="9000" />\
+            <div class="two-range-slider">
+              <span class="two-range-slider-line"></span>
+              <button class="two-range-slider-min" type="button"></button>
+              <button class="two-range-slider-max" type="button"></button>
+            </div>
           </fieldset>
           <div class="inner-filter-buttons">
             <button class="button" type="submit">Применить</button>
@@ -95,15 +100,14 @@
 
     <section class="results">
       <div class="results-sorting">
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <p><b>Найдено гостиниц:38</b></p>
-        <select class="results-sorting" id="sorting" aria-label="Сортировка">
+        <h2 class="visually-hidden">Найдено гостиниц: 38</h2>
+        <label class="visually-hidden" for="sorting">Сортировка</label>
+        <select class="results-sorting" id="sorting">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
         <div class="button-view">
-          <!---А если все завернуть в список, а не див? Как логичней?-->
           <a class="button-view-dark" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
@@ -115,8 +119,8 @@
           </a>
         </div>
       </div>
-      <ul class="hotels">
-        <li class="hotels-list">
+      <ul class="hotels-list">
+        <li class="hotels-list-item">
           <img src="images/hotel-Amara.jpg" alt="" width="300" height="211" />
           <h3>Amara Resort & Spa</h3>
           <div class="hotel-price">
@@ -125,9 +129,10 @@
           </div>
           <a class="link" href="#">Подробнее</a>
           <button type="button">В избранное</button>
+          <span class="hotels-raiting-stars"></span>
           <span class="hotels-raiting">РЕЙТИНГ: 5,0</span>
         </li>
-        <li class="hotels-list">
+        <li class="hotels-list-item">
           <img src="images/hotel-Villas.jpg" alt="" width="300" height="211" />
           <h3>Villas at Poco Diablo</h3>
           <div class="hotel-price">
@@ -136,9 +141,10 @@
           </div>
           <a class="link" href="#">Подробнее</a>
           <button type="button">В избранное</button>
+          <span class="hotels-raiting-stars"></span>
           <span class="hotels-raiting">РЕЙТИНГ: 9,2</span>
         </li>
-        <li class="hotels-list">
+        <li class="hotels-list-item">
           <img src="images/hotel-Desert.jpg" alt="" width="300" height="211" />
           <h3>Desert Quail Inn</h3>
           <div class="hotel-price">
@@ -147,9 +153,10 @@
           </div>
           <a class="link" href="#">Подробнее</a>
           <button type="button">В избранное</button>
+          <span class="hotels-raiting-stars"></span>
           <span class="hotels-raiting">РЕЙТИНГ: 6,9</span>
         </li>
-        <li class="hotels-list">
+        <li class="hotels-list-item">
           <img src="images/hotel-GreenTree.jpg" alt="" width="300" height="211" />
           <h3>GreenTree Inn</h3>
           <div class="hotel-price">
@@ -158,13 +165,14 @@
           </div>
           <a class="link" href="#">Подробнее</a>
           <button type="button">В избранное</button>
+          <span class="hotels-raiting-stars"></span>
           <span class="hotels-raiting">РЕЙТИНГ: 5,0</span>
         </li>
       </ul>
       <div class="pages-of-result">
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">1</a>
+            <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -182,9 +190,9 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <div class="labelclass">
-          <label for="onpage">Гостиниц на странице:</label>
-          <select class="houses-onpage-select" id="onpage">
+        <div class="hotels-on-page">
+          <label for="on-page">Гостиниц на странице:</label>
+          <select class="houses-onpage-select" id="on-page">
             <option>2</option>
             <option selected>4</option>
             <option>6</option>
@@ -206,7 +214,6 @@
 
   <footer class="page-footer">
     <div class="footer-social">
-      <h2 class="visually-hidden">Наши контакты и копирайт</h2>
       <ul>
         <li>
           <a class="footer-social-vk" href="#">
