@@ -8,33 +8,32 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="main-page">
     <a class="logo-link" href="index.html"><img src="images/logo.svg" alt="Логотип" width="139" height="70" /></a>
-    <nav class="naviagtion">
-      <!--может лого и первый nav стоит объединить в div для позиционирования относительно второго nav?-->
-      <ul class="naviagtion-list">
-        <li class="naviagtion-item">
-          <a class="naviagtion-link navigation-link-current">Главная</a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current">Главная</a>
         </li>
-        <li class="naviagtion-item">
-          <a class="naviagtion-link" href="#sedona">О Седоне</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#sedona">О Седоне</a>
         </li>
-        <li class="naviagtion-item">
-          <a class="naviagtion-link" href="Catalog.html">Гостиницы</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="Catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="naviagtion-list naviagtion-user">
-        <li class="naviagtion-item">
-          <a class="naviagtion-link" href="#">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="naviagtion-item">
-          <a class="naviagtion-link" href="#">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <li class="naviagtion-item">
+        <li class="navigation-item">
           <button type="button">Хочу сюда!</button>
         </li>
       </ul>
@@ -44,7 +43,6 @@
   <main class="main-index">
     <section>
       <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
-      <!--предположение, что может стоит сделать отдельными картинками, чтобы в случае замены фона/надписи не было проблем?-->
       <img src="images/welcome-photo.jpg" alt="Пейзаж на горы" width="1200" height="485" />
       <p id="sedona"> <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b> </p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -60,16 +58,16 @@
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img src="images/city-photo.jpg" width="800" height="384" alt="фотография города" />
-          <ul class="reason-list-item-list">
-            <li class="reason-list-item-list-item">
+          <ul class="reason-one-list">
+            <li class="reason-one-list-item">
               <h4>Жилье</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="reason-list-item-list-item">
+            <li class="reason-one-list-item">
               <h4>Еда</h4>
               <p> Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь! </p>
             </li>
-            <li class="reason-list-item-list-item">
+            <li class="reason-one-list-item">
               <h4>Сувенир</h4>
               <p> Не только китайского, но и настоящего местного производства! </p>
             </li>
@@ -104,12 +102,12 @@
     <section class="Search-hotels">
       <h2>Заинтересовались?</h2>
       <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-      <a class="link" href="catalog.html">Поиск гостиницы в седоне</a>
+      <a class="link" href="catalog.html">Поиск гостиницы в Cедоне</a>
     </section>
 
     <section class="subscription">
       <h2>Подпишитесь на рассылку</h2>
-      <p> Только полезная информация и никакого спама, честное бойскаутское! </p>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription">Введите ваш e-mail</label>
         <input class="field" id="subscription" type="email" placeholder="Ваш e-mail" name="newsletter-email" />
@@ -120,7 +118,6 @@
 
   <footer class="page-footer">
     <div class="footer-social">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul>
         <li>
           <a class="footer-social-vk" href="#">
