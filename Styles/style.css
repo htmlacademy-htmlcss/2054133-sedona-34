@@ -57,7 +57,7 @@ ul {
     background-color: #bbcedd;
     background-image: url("/images/index-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 1200 485;
 }
 
 .main-paragraph-bold {
@@ -70,7 +70,31 @@ ul {
 
 /* reasons */
 
-.reason-list {
+.features-list {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.features-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/*
+
+.features-one-container {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.features-one-header, .features-two-header {
+    color: #FFFFFF;
+}
+
+.reason-one-list p {
     font-size: 18px;
     line-height: 21px;
 }
@@ -79,35 +103,75 @@ ul {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
+}
+
+.reason-one-item-first, .reason-one-item-third {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.features-two-container {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.feature-item-three, .feature-item-five {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-item-four {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+*/
+
+/*
+.featuress-list h2, h3, p {
+    color: black;
+}
+
+.features-item:nth-of-type(n+1) h3, 
+.features-item:nth-of-type(n+1) p:not(.ira) {
+    color: white;
+}
+
+.features-item:nth-of-type(n+1) {
+    background-color: #82B3D3;
+}
+
+.features-item:nth-of-type(n+3) h3 {
     color: #000000;
 }
 
-.reason-one-container {
-    color: #FFFFFF;
-    background-color: #82B3D3;
+.features-item:nth-of-type(n+3) p:not(.ira) {
+    color: #333333;
 }
 
-.reason-one-header, .reason-two-header {
-    color: #FFFFFF;
+.reason-one-list h4 {
+    color: #000000;
 }
 
-.reason-one-item-one, .reason-one-item-three {
-    background-color: rgba(131, 179, 211, 0.12);
+.reason-one-list .ira {
+    color: #333333;
 }
 
-.reason-two-container {
-    color: #FFFFFF;
-    background-color: #82B3D3;
+*/
+main {
+    background-color: orange;
 }
 
-.reason-item-three, .reason-item-five {
-    background-color: rgba(131, 179, 211, 0.12);
+.featuress-list h3, h4 { 
+    color: #000000;
 }
 
-.reason-item-four {
-    background-color: rgba(131, 179, 211, 0.2);
+.features-item:nth-of-type(n+1):nth-of-type(-n+2) h3,
+.features-item:nth-of-type(n+1):nth-of-type(-n+2) p:not(h4~p) {
+    color: white;
 }
+
+
+
+
+
 
 
 /* hotels searching */
@@ -136,7 +200,7 @@ ul {
     color:#ffffff;
     background-image: url("/images/subscription-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 1200 411;
 }
 
 .subscription h2 {
@@ -155,14 +219,12 @@ ul {
     text-decoration: none;
 }
 
-/* main-catalog */
+/* main-catalog filters*/
 
 .main-inner-filter {
     color:#ffffff;
     background-image: url("/images/filter-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 1200 403;
 }
-
-
 
