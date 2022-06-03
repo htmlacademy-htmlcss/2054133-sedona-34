@@ -71,14 +71,14 @@ ul {
 
 /* reasons */
 
-.featuress h3, h4 {
+.features h3, h4 {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
 }
 
-.featuress p {
+.features p {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -173,7 +173,7 @@ background: rgba(131, 179, 211, 0.2);
     font-size: 18px;
 }
 
-.main-inner-header {
+.main-inner-headline {
     font-size: 60px;
     line-height: 78px;
 }
@@ -310,3 +310,4 @@ background: rgba(131, 179, 211, 0.2);
 .subscription-catalog-field {
     background-color: #f2f2f2;
 }
+
