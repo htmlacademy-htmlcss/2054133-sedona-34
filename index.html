@@ -34,85 +34,93 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button type="button">Хочу сюда!</button>
+          <button class="button-navigation" type="button">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main-index">
-    <section>
-      <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
-      <img src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks"
-        width="1200" height="485" />
-      <p id="sedona"> <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b> </p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <section class="main-title">
+      <div class="main-image">
+        <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
+        <img src="images/welcome.svg" width="458" height="352"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks"/>
+      </div>
+      <p class="main-paragraph-bold" id="sedona"> Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="main-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
-    <section class="reason">
+    <section class="features">
       <h2 class="visually-hidden">Список причин</h2>
-      <ul class="reason-list">
-        <li class="reason-list-item reason-one-item">
-          <div class="reason-one">
-            <h3 class="reason-one-item-header">Настоящий городок</h3>
+      <ul class="features-list">
+        <li class="features-item">
+          <div class="features-wrapper">
+            <h3>Настоящий городок</h3>
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img src="images/city-photo.jpg" width="800" height="384" alt="фотография города" />
           <ul class="reason-one-list">
-            <li class="reason-one-list-item">
-              <h4>Жилье</h4>
+            <li class="reason-one-item">
+              <h4 class="reason-header">Жилье</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="reason-one-list-item">
-              <h4>Еда</h4>
-              <p> Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь! </p>
+            <li class="reason-one-item">
+              <h4 class="reason-header">Еда</h4>
+              <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="reason-one-list-item">
-              <h4>Сувенир</h4>
-              <p> Не только китайского, но и настоящего местного производства! </p>
+            <li class="reason-one-item">
+              <h4 class="reason-header">Сувенир</h4>
+              <p>Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </li>
-        <li class="reason-list-item reason-two-item">
-          <div class="reason-two">
-            <h3 class="reason-two-item-header">Там есть мост дьявола</h3>
+        <li class="features-item">
+          <div class="features-wrapper">
+            <h3 class="features-header">Там есть мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <img src="images/bridge-of-devil.jpg" width="800" height="384" alt="фотография моста дьявола" />
         </li>
-        <li class="reason-list-item reason-three-item">
-          <h3 class="reason-three-item-header">Небольшая площадь</h3>
-          <p>— №3 —</p>
-          <p>Все достопримечательности находятся очень близко</p>
+        <li class="features-item">
+          <div class="features-wrapper">
+            <h3 class="features-header">Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
         </li>
-        <li class="reason-list-item reason-four-item">
-          <h3 class="reason-four-item-header">Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <li class="features-item">
+          <div class="features-wrapper">
+            <h3 class="features-header">Красивая дорога</h3>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
-        <li class="reason-list-item reason-five-item">
-          <h3 class="reason-five-item-header">Мало туристов</h3>
-          <p>— №5 —</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="features-item">
+          <div class="features-wrapper">
+            <h3 class="features-header">Мало туристов</h3>
+            <p>— №5 —</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section class="Search-hotels">
+    <section class="search-hotels">
       <h2>Заинтересовались?</h2>
       <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-      <a class="link" href="catalog.html">Поиск гостиницы в Cедоне</a>
+      <a class="search-hotels-link" href="catalog.html">Поиск гостиницы в Cедоне</a>
     </section>
 
-    <section class="subscription">
+    <section class="subscription-index">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription">Введите ваш e-mail</label>
-        <input class="field" id="subscription" type="email" placeholder="Ваш e-mail" name="newsletter-email" />
-        <button class="button" type="submit">Подписаться</button>
+        <input class="subscription-idnex-field" id="subscription" type="email" placeholder="Ваш e-mail" name="newsletter-email" />
+        <button class="subscription-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -142,7 +150,6 @@
       <span class="visually-hidden">Сайт разработчика</span>
       <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="лого разработчика">
     </a>
-  </footer>
   </footer>
 </body>
 
