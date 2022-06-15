@@ -19,18 +19,18 @@
             <li class="navigation-menu-item">
               <a class="navigation-link" href="index.html#sedona">О Седоне</a>
             </li>
-            <li class="nnavigation-menu-item navigation-link-current">
-              <a class="navigation-link">Гостиницы</a>
+            <li class="navigation-menu-item">
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user navigation-link-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -50,6 +50,9 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <span>Главная</span>
                 </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <span>></span>
               </li>
               <li class="breadcrumbs-item">
                 <a>Гостиницы</a>
@@ -99,24 +102,26 @@
         </div>
 
         <section class="results">
-          <div class="results-sorting">
+          <div class="results-wrapper">
             <h2 class="results-header">Найдено гостиниц: 38</h2>
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="results-sorting" id="sorting">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-            <div class="button-view">
-              <a class="button-view-dark" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="button-view-light" href="#">
-                <span class="visually-hidden">Показать по одной</span>
-              </a>
-              <a class="button-view-light" href="#">
-                <span class="visually-hidden">Показать списком</span>
-              </a>
+            <div class="results-filter">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="results-sorting" id="sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <div class="button-wrapper">
+                <a class="button-view button-view-cards button-view-current" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="button-view button-view-one-by-one" href="#">
+                  <span class="visually-hidden">Показать по одной</span>
+                </a>
+                <a class="button-view button-view-list" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </div>
             </div>
           </div>
           <div class="hotels-wrapper">
@@ -173,7 +178,6 @@
                 <br>
                 <span class="hotel-raiting">РЕЙТИНГ: 5,0</span>
               </li>
-
             </ul>
           </div>
           <div class="wrapper-select-page-results">
@@ -198,8 +202,8 @@
               </li>
             </ul>
             <div class="hotels-on-page">
-              <label for="on-page">Гостиниц на странице:</label>
-              <select class="houses-onpage-select" id="on-page">
+              <label class="hotels-on-page-label" for="on-page">Гостиниц на странице:</label>
+              <select class="houses-on-page-select" id="on-page">
                 <option>2</option>
                 <option selected>4</option>
                 <option>6</option>
@@ -211,7 +215,8 @@
 
         <section class="subscription-catalog subscription">
           <h2 class="subscription-header">Подпишитесь на рассылку</h2>
-          <p class="subscription-text subscription-catalog-text"> Только полезная информация и никакого спама,<br> честное бойскаутское! </p>
+          <p class="subscription-text subscription-catalog-text"> Только полезная информация и никакого спама,<br>
+            честное бойскаутское! </p>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscription">Введите ваш e-mail</label>
             <input class="subscription-catalog-field" id="subscription" type="email" placeholder="Ваш e-mail"
@@ -224,18 +229,18 @@
       <footer class="page-footer">
         <div class="footer-social">
           <ul class="social-list">
-            <li>
-              <a class="footer-social-vk" href="https://vk.com/htmlacademy">
+            <li class="social-item">
+              <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li>
-              <a class="footer-social-telegram" href="https://t.me/htmlacademy">
+            <li class="social-item">
+              <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
-            </li>
+            </li class="social-item">
             <li>
-              <a class="footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
