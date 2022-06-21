@@ -10,7 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="logo-link"><img src="images/logo.svg" alt="Логотип" width="139" height="70" /></a>
+        <a class="logo-link"><img src="images/logo.svg" alt="Логотип" width="139" height="70"/></a>
         <nav class="navigation">
           <ul class="navigation-list navigation-menu">
             <li class="navigation-menu-item">
@@ -25,12 +25,12 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user navigation-link-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -43,7 +43,7 @@
 
       <main class="main-index">
         <section class="main-title">
-          <div class="main-image">
+          <div class="main-wrapper">
             <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
             <img class="welcome-image" src="images/welcome.svg" width="458" height="352"
               alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks" />
@@ -58,10 +58,9 @@
           <h2 class="visually-hidden">Список причин</h2>
           <ul class="features-list">
             <li class="features-item">
-              <div class="features-wrapper features-wrapper-first">
+              <div class="features-wrapper features-wrapper-saturated">
                 <h3 class="features-header">Настоящий городок</h3>
-                <p class="features-text-first">— №1 —</p>
-                <p class="features-text-first ">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="features-text features-text-colored">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img src="images/city-photo.jpg" width="800" height="384" alt="фотография города" />
               <ul class="reason-list">
@@ -74,37 +73,33 @@
                   <p class="reason-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="reason-item reason-item-color">
-                  <h4 class="reason-header">Сувенир</h4>
+                  <h4 class="reason-header">Сувениры</h4>
                   <p class="reason-text">Не только китайского, но и настоящего местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="features-item">
-              <div class="features-wrapper features-wrapper-second">
+              <img src="images/bridge-of-devil.jpg" width="800" height="384" alt="фотография моста дьявола"/>
+              <div class="features-wrapper features-wrapper-saturated">
                 <h3 class="features-header">Там есть мост дьявола</h3>
-                <p class="features-text-second">— №2 —</p>
-                <p class="features-text-second">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <p class="features-text features-text-colored">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img src="images/bridge-of-devil.jpg" width="800" height="384" alt="фотография моста дьявола" />
             </li>
             <li class="features-item">
-              <div class="features-wrapper features-wrapper-third">
+              <div class="features-wrapper features-wrapper-unsaturated">
                 <h3 class="features-header">Небольшая площадь</h3>
-                <p class="features-text">— №3 —</p>
                 <p class="features-text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="features-item">
-              <div class="features-wrapper features-wrapper-fourth">
+              <div class="features-wrapper features-wrapper-medium-saturated">
                 <h3 class="features-header">Красивая дорога</h3>
-                <p class="features-text">— №4 —</p>
                 <p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="features-item">
-              <div class="features-wrapper features-wrapper-fifth">
+              <div class="features-wrapper features-wrapper-unsaturated">
                 <h3 class="features-header">Мало туристов</h3>
-                <p class="features-text">— №5 —</p>
                 <p class="features-text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
@@ -113,7 +108,7 @@
 
         <section class="search-hotels">
           <h2 class="search-hotels-header">Заинтересовались?</h2>
-          <p class="search-hotels-text"> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+          <p class="search-hotels-text"> Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в Седоне </p>
           <a class="search-hotels-link" href="catalog.html">Поиск гостиницы в Cедоне</a>
         </section>
 
@@ -132,18 +127,18 @@
       <footer class="page-footer">
         <div class="footer-social">
           <ul class="social-list">
-            <li>
-              <a class="footer-social-vk" href="https://vk.com/htmlacademy">
+            <li class="social-item">
+              <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li>
-              <a class="footer-social-telegram" href="https://t.me/htmlacademy">
+            <li class="social-item">
+              <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
-            </li>
+            </li class="social-item">
             <li>
-              <a class="footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
