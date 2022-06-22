@@ -168,9 +168,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.main-wrapper {
   background-color: #82b3d3;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
