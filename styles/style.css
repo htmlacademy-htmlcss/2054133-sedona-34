@@ -709,7 +709,7 @@ body {
   border: 2px solid #000000;
 }
 
-.button-view:active {
+.button-iew:active {
   border: 2px solid #000000;
 }
 
@@ -719,21 +719,21 @@ body {
 }
 
 .button-view-cards {
-  background-image: url("../images/view-1.svg");
+  background-image: url("../images/View-1.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
 .button-view-one-by-one {
-  background-image: url("../images/view-2.svg");
+  background-image: url("../images/View-2.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
 .button-view-list {
-  background-image: url("../images/view-3.svg");
+  background-image: url("../images/View-3.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
