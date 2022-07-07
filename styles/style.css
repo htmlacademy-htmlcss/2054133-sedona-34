@@ -584,7 +584,7 @@ body {
   position: relative;
 }
 
-.breadcrumbs-link::after {
+.breadcrumbs-item::after {
   position: absolute;
   content: "";
   background: url("../images/breadcrumbs_arrow.svg");
@@ -592,8 +592,12 @@ body {
   background-repeat: no-repeat;
   width: 7px;
   height: 9px;
-  top: 6px;
-  right: -13px;
+  top: 5px;
+  right: -14px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -616,7 +620,7 @@ body {
   outline: none;
 }
 
-.breadcrumbs-link:hover :not(.breadcrumbs-current) {
+.breadcrumbs-link:hover:not(.breadcrumbs-current) {
   opacity: 60%;
 }
 
@@ -624,7 +628,7 @@ body {
   opacity: 60%;
 }
 
-.breadcrumbs-link:active :not(.breadcrumbs-current) {
+.breadcrumbs-link:active:not(.breadcrumbs-current) {
   opacity: 30%;
 }
 
