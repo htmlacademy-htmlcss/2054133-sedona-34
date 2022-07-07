@@ -208,7 +208,7 @@ body {
   width: 1200px;
   height: 57px;
   position: absolute;
-  background-image: url("../images/Mask.png");
+  background-image: url("../images/mask.png");
   background-size: 1200px 57px;
   background-repeat: no-repeat;
   bottom: -1px;
@@ -932,21 +932,21 @@ body {
 }
 
 .button-view-cards {
-  background-image: url("../images/View-1.svg");
+  background-image: url("../images/view-1.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
 .button-view-one-by-one {
-  background-image: url("../images/View-2.svg");
+  background-image: url("../images/view-2.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
 .button-view-list {
-  background-image: url("../images/View-3.svg");
+  background-image: url("../images/view-3.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
