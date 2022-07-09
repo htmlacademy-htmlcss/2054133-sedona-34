@@ -1237,7 +1237,6 @@ body {
 .button-brown {
   background-color: #756157;
   transition: background-color 0.2s;
-
 }
 
 .button-brown:hover {
@@ -1252,6 +1251,7 @@ body {
 
 .button-brown:active:not(.button-brown:disabled) {
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .button-blue {
