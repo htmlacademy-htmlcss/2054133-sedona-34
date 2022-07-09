@@ -603,8 +603,8 @@ body {
   background-repeat: no-repeat;
   width: 7px;
   height: 9px;
-  top: 5px;
-  right: -14px;
+  top: 6px;
+  right: -13px;
 }
 
 .breadcrumbs-item:last-child::after {
@@ -1245,8 +1245,8 @@ body {
 
 .button-brown:focus {
   background-color: #615048;
-  outline: 3px solid #83b3d3;
-  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .button-brown:active:not(.button-brown:disabled) {
@@ -1265,8 +1265,8 @@ body {
 
 .button-blue:focus {
   background-color: #68a2ca;
-  outline: 3px solid #756257;
-  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .button-blue:active:not(.button-blue:disabled) {
