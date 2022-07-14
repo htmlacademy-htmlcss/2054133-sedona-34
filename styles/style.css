@@ -851,7 +851,7 @@ body {
   z-index: 1;
 }
 
-.price-field:active :not(.price-field:disabled) {
+.price-field:active:not(.price-field:disabled) {
   border-color: #ffffff;
   box-shadow: none;
   background-color: #756257;
