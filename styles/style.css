@@ -1347,7 +1347,7 @@ body {
   position: relative;
   width: 715px;
   margin: auto;
-  padding: 62px 64px 70px 76px;
+  padding: 62px 70px 70px 70px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 0 60px #cccccc;
@@ -1359,7 +1359,7 @@ body {
   top: 0;
   right: 0;
   margin-top: 54px;
-  margin-right: 64px;
+  margin-right: 70px;
   width: 53px;
   height: 53px;
   border: none;
@@ -1501,7 +1501,7 @@ body {
   line-height: 21px;
   background-color: #333333;
   margin: 15px 0 0 0;
-  padding: 15px 18px 18px 22px;
+  padding: 17px 18px 20px 22px;
   border-radius: 10px;
   width: 256px;
   box-sizing: border-box;
@@ -1541,7 +1541,6 @@ body {
   -ms-grid-column: 2;
   grid-area: B;
   font-family: inherit;
-  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   width: 420px;
@@ -1688,7 +1687,6 @@ body {
 
 .modal-field-amount {
   font-family: inherit;
-  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
